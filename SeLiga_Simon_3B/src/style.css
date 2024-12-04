@@ -1,0 +1,90 @@
+/* Configs Globais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+:root {
+    --main-color: rgba(0, 0, 0, 0.9);
+    --second-color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Background */
+body {
+    background-image: url(./src/img/Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card principal */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainCard {
+    text-align: center;
+    border-radius: 30px;
+    width: 400px;
+    background-color: var(--main-color);
+    margin-top: 30px;
+}
+
+/* Profile */
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+.profileName {
+    margin: 10px 0;
+    font-size: 33px;
+    color: var(--second-color);
+}
+
+.about {
+    color: var(--second-color);
+    letter-spacing: 1.5px;
+}
+
+/* Links */
+
+.mainCard ul li {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mainCard ul li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, #6f82e4, #1f2ebe);
+    width: 300px;
+    height: 55px;
+    color: var(--second-color);
+    border-radius: 10px;
+    transition: 220ms ease-out;
+}
+
+.mainCard ul li a:hover {
+    transform: scale(1.1);
+    transition: 220ms;
+}
+
+#discordAncora {
+    cursor: pointer;
+}
